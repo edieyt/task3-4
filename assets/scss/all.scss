@@ -3,3 +3,14 @@
 
 
 @import './pages/index.scss';
+
+@import "base/reset";
+@import "base/variables";
+@import "base/fontStyle";
+
+@import "pages/index";
+@import "pages/faq";
+@import "pages/store";
+
+
+@import "utils/mixin";

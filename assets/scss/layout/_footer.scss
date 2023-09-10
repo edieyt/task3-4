@@ -1,4 +1,161 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+
+footer{
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+footer a{
+  color: var(--white);
+  text-decoration: none;
+  
+
+&:hover{
+  font-weight: bold;
+}
+  }
+
+
+.info{
+  padding-top: 48px;
+  max-width: 1296px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+.navs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+
+  li a{
+    font-size: 16px;
+    padding-right: 48px;
+    text-wrap: nowrap;
+  }
+}
+
+.info-bar{
+
+  p{
+  font-size: 36px;
+  margin-bottom: 8px;
+ 
+
+  span{
+    font-size: 36px;
+    vertical-align: middle;
+    margin-right: 22px;
+      
+    }
+  }
+}
+
+
+.social-media{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // max-width: 208px;
+
+  
+  li {
+    // max-width: 48px;
+    padding-left: 32px;
+
+  
+    img{
+      background: transparent;
+      opacity: 1;
+      max-width: 48px;
+      
+    }
+  }
+  }
+
+
+hr{
+  margin: 32px auto;
+  max-width: 1296px;
+}
+
+
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.notice{
+  font-size: 16px;
+}
+
+.policy {
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+
+  a{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:768px) {
+
+  footer{
+    max-width:100%;
+  }
+
+  footer .info .info-bar{
+      max-width:100%;
+  }
+  footer .info-bar p span{
+      font-size: 30px;
+  }
+  .social-media li{
+      max-width: 40px;
+  }
+  .policy {
+      display: flex;
+      gap: 24px;
+  }
+}
+
+@media(max-width:604px) {
+  footer .info .info-bar{
+      width:100%;
+  }
+  footer .info-bar p{
+      font-size: 16px;
+  }
+  .policy {
+      display: flex;
+      gap: 8px;
+  }
+}
+
+@media(max-width:576px) {
+  footer .info-bar p{
+      font-size: 16px;
+  }
+  footer .info-bar p span{
+      font-size: 18px;
+      margin-right: 11px;
+  }
+  footer .info-bar .navs{
+      display: none;
+  }
+  .social-media li{
+      max-width: 24px;
+  }
+  .policy, .copyright{
+      flex-direction: column;
+      align-items: start;
+      gap: 8px;
+  }
+  
 }
